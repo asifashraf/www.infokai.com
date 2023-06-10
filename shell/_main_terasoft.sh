@@ -13,7 +13,7 @@ else
 
     "t.deploy")
 	  source cd-ts.sh
-      aws s3 sync . s3://www.terasoft.ai/
+      aws s3 sync . s3://www.terasoft.ai/ --exclude ".git/*" --exclude "sass/*" --exclude "css/*" --exclude "demos/*" --exclude "images/*" --exclude "include/*" --exclude "js/*"
       aws cloudfront create-invalidation --distribution-id E2H5DT29PLMKB5 --paths "/*"
 	;;
 
