@@ -1,0 +1,12 @@
+/* TopMenu.css */
+.top-menu {
+    @apply bg-blue-500;
+}
+
+.top-menu-item {
+    @apply text-white;
+}
+
+.top-menu-item:hover {
+    @apply bg-blue-700;
+}

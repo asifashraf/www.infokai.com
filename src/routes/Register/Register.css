@@ -1,0 +1,16 @@
+/* RegisterForm.css */
+.register-form-container {
+    @apply min-h-screen flex items-center justify-center bg-gray-100;
+}
+
+.register-form {
+    @apply bg-white p-4 rounded shadow-md;
+}
+
+.register-form-button {
+    @apply w-full;
+}
+
+.register-form-item {
+    @apply mb-2;
+}

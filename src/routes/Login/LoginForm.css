@@ -1,0 +1,16 @@
+/* LoginForm.css */
+.login-form-container {
+    @apply min-h-screen flex items-center justify-center bg-gray-100;
+}
+
+.login-form {
+    @apply bg-white p-4 rounded shadow-md;
+}
+
+.login-form-button {
+    @apply w-full;
+}
+
+.login-form-item {
+    @apply mb-2;
+}
