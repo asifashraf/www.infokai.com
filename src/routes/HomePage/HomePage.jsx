@@ -1,49 +1,143 @@
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import Counter from "./Counter.jsx";
-export default function(){
+import { useEffect } from 'react';
+
+
+export default function () {
+
+    // Inside your React component
+    useEffect(() => {
+
+
+       
+    }, []);
+
     return <>
-        <div id="detail">
-            <div className="bg-blue-500 text-white py-16">
-                <h1 className="text-center text-4xl font-semibold">Welcome to our website</h1>
-                <p className="text-center mt-4">This is a simple example of a home page design.</p>
+        <div id="wrapper">
+
+            <div id="top-bar" className="text-center dark" style={{ backgroundColor: '#15888a' }}>
+                <p className="mb-0 text-white" style={{ fontSize: '14px' }}>
+                    Holisticly cultivate multifunctional quality vectors after Mobile SDK.
+                    <a href="#" className="ms-2 font-primary fw-bold text-white"><u>Learn More</u> &#8250;</a>
+                </p>
             </div>
 
-            <div className="container mx-auto px-4 py-12">
-                <h2 className="text-center text-2xl font-semibold mb-8">Features</h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div className="text-center">
-                        <h3 className="text-xl font-semibold">Feature 1</h3>
-                        <p>Description of feature 1 goes here.</p>
-                    </div>
-                    <div className="text-center">
-                        <h3 className="text-xl font-semibold">Feature 2</h3>
-                        <p>Description of feature 2 goes here.</p>
-                    </div>
-                    <div className="text-center">
-                        <h3 className="text-xl font-semibold">Feature 3</h3>
-                        <p>Description of feature 3 goes here.</p>
+            <header id="header" className="full-header transparent-header dark" data-sticky-class="not-dark" data-responsive-class="not-dark">
+                <div id="header-wrap">
+                    <div className="container">
+                        <div className="header-row">
+
+                            {/* Logo */}
+                            <div id="logo">
+                                <a href="index.html">
+                                    <img className="logo-default" srcSet="src/templates/images/logo.png, src/templates/images/logo@2x.png 2x" src="src/templates/images/logo@2x.png" alt="Canvas Logo" />
+                                    <img className="logo-dark" srcSet="src/templates/images/logo-dark.png, src/templates/images/logo-dark@2x.png 2x" src="src/templates/images/logo-dark@2x.png" alt="Canvas Logo" />
+                                </a>
+                            </div>
+
+                            <div className="header-misc">
+                                <a href="#" className="button bg-white text-dark button-light button-rounded color">Sign Up</a>
+                            </div>
+
+                            <div className="primary-menu-trigger">
+                                <button className="cnvs-hamburger" type="button" title="Open Mobile Menu">
+                                    <span className="cnvs-hamburger-box"><span className="cnvs-hamburger-inner"></span></span>
+                                </button>
+                            </div>
+
+                            {/* Primary Navigation */}
+                            <nav className="primary-menu with-arrows">
+                                <ul className="menu-container">
+                                    <li className="menu-item current"><a className="menu-link" href="#"><div>Home</div></a></li>
+                                    <li className="menu-item mega-menu"><a className="menu-link" href="#"><div>Hosting</div></a>
+                                        <div className="mega-menu-content mega-menu-style-2 border-top-0 not-dark">
+                                            <div className="container">
+                                                <div className="row">
+                                                    <ul className="sub-menu-container mega-menu-column col-lg-3">
+                                                        <li className="menu-item">
+                                                            <div className="widget">
+                                                                <div className="feature-box not-dark fbox-center mb-0">
+                                                                    <div className="fbox-icon mb-4">
+                                                                        <img src="src/templates/demos/hosting/images/svg/web.svg" className="rounded-0 bg-transparent text-start" alt="Image" style={{ width: '52px' }} />
+                                                                    </div>
+                                                                    <div className="fbox-content">
+                                                                        <h3 className="fw-medium"><a href="#">Web Hosting</a></h3>
+                                                                        <p className="d-none d-lg-block mb-0 fw-light">Is a type of Internet hosting service that allows individuals and organizations to make their website accessible via the World Wide Web.</p>
+                                                                        <a href="#" className="btn btn-link mt-2 color p-0">Learn More &#8250;</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    {/* Remaining sub-menu-container elements */}
+                                                    <ul className="sub-menu-container mega-menu-column col-lg-3">
+                                                        <li className="menu-item">
+                                                            <div className="widget">
+                                                                <div className="feature-box not-dark fbox-center mb-0">
+                                                                    <div className="fbox-icon mb-4">
+                                                                        <img src="src/templates/demos/hosting/images/svg/cloud.svg" className="rounded-0 bg-transparent text-start" alt="Image" style={{ width: '52px' }} />
+                                                                    </div>
+                                                                    <div className="fbox-content">
+                                                                        <h3 className="fw-medium"><a href="#">Cloud Hosting</a></h3>
+                                                                        <p className="d-none d-lg-block mb-0 fw-light">The major benefit cloud hosting offers over shared hosting is that it allows you to utilize the resources of multiple servers.</p>
+                                                                        <a href="#" className="btn btn-link mt-2 color p-0">Learn More &#8250;</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <ul className="sub-menu-container mega-menu-column col-lg-3">
+                                                        <li className="menu-item">
+                                                            <div className="widget">
+                                                                <div className="feature-box not-dark fbox-center mb-0">
+                                                                    <div className="fbox-icon mb-4">
+                                                                        <img src="src/templates/demos/hosting/images/svg/dedicated.svg" className="rounded-0 bg-transparent text-start" alt="Image" style={{ width: '52px' }} />
+                                                                    </div>
+                                                                    <div className="fbox-content">
+                                                                        <h3 className="fw-medium"><a href="#">Dedicated Hosting</a></h3>
+                                                                        <p className="d-none d-lg-block mb-0 fw-light">Dedicated server or managed hosting service is a type of Internet hosting in which the client leases an entire server not shared with anyone.</p>
+                                                                        <a href="#" className="btn btn-link mt-2 color p-0">Learn More &#8250;</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <ul className="sub-menu-container mega-menu-column col-lg-3">
+                                                        <li className="menu-item">
+                                                            <div className="widget">
+                                                                <div className="feature-box not-dark fbox-center mb-0">
+                                                                    <div className="fbox-icon mb-4">
+                                                                        <img src="src/templates/demos/hosting/images/svg/shared.svg" className="rounded-0 bg-transparent text-start" alt="Image" style={{ width: '52px' }} />
+                                                                    </div>
+                                                                    <div className="fbox-content">
+                                                                        <h3 className="fw-medium"><a href="#">Shared Hosting</a></h3>
+                                                                        <p className="d-none d-lg-block mb-0 fw-light">Shared Web Hosting service refers to a web hosting service where many websites reside on one web server connected to the Internet.</p>
+                                                                        <a href="#" className="btn btn-link mt-2 color p-0">Learn More &#8250;</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li className="menu-item"><a className="menu-link" href="#"><div>Services</div></a></li>
+                                    <li className="menu-item"><a className="menu-link" href="#"><div>Domains</div></a></li>
+                                    <li className="menu-item"><a className="menu-link" href="#"><div>FAQs</div></a></li>
+                                    <li className="menu-item"><a className="menu-link" href="#"><div>Contact</div></a></li>
+                                </ul>
+                            </nav>
+
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div className="header-wrap-clone"></div>
+            </header>
 
-            <div className="bg-gray-100 py-12">
-                <h2 className="text-center text-2xl font-semibold mb-8">Call to action</h2>
-                <p className="text-center">Encourage visitors to perform a specific action, such as signing up or contacting you.</p>
-                <div className="text-center mt-8">
-                    <Link to="/register" className="bg-blue-500 text-white px-8 py-2 rounded">
-                        Sign Up Now
-                    </Link>
-                    <br/>
-                    <br/>
-                    <div>
-                        <Counter />
-                    </div>
-                </div>
-            </div>
 
-            <footer className="bg-blue-500 text-white py-4">
-                <div className="text-center">&copy; Your Website Name. All rights reserved.</div>
-            </footer>
+
         </div>
     </>;
 }

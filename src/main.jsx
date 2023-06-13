@@ -14,16 +14,9 @@ import {
 import Root from "./routes/root";
 import ErrorPage from "./error-page";
 import Home from "./routes/HomePage/HomePage.jsx";
-import Login from "./routes/Login/login.jsx";
-import Register from "./routes/Register/Register.jsx";
 
-//// Import CSS
-// Import Tailwind CSS
-import "/src/css/index.css";
-// Import Ant Reset CSS
-import 'antd/dist/reset.css';
-// Import Custom Base Style to customize anything
-import '/src/css/custom-base-style.css';
+
+
 
 // Create a router
 const router = createBrowserRouter([
@@ -36,14 +29,7 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home />,
       },
-      {
-        path: "login",
-        element: <Login />,
-      },
-      {
-        path: "register",
-        element: <Register />,
-      },
+      
     ],
   }
 ]);
