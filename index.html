@@ -32,20 +32,138 @@
 
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="src/templates/css/custom.css">
-	<script>
-		window.globals = {
-			jsFolder: 'src/templates/js/',
-			cssFolder: 'src/templates/css/',
-		};
-	</script>
+
 
 </head>
 
 <body class="stretched">
-	<div id="root"></div>
+
 
 	<div id="wrapper">
 
+
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="full-header transparent-header dark" data-sticky-class="not-dark" data-responsive-class="not-dark">
+			<div id="header-wrap">
+				<div class="container">
+					<div class="header-row">
+
+						<!-- Logo
+						============================================= -->
+						<div id="logo">
+							<a href="index.html">
+								<img class="logo-default" srcset="src/templates/images/logo.png, images/logo@2x.png 2x" src="src/templates/images/logo@2x.png" alt="Canvas Logo">
+								<img class="logo-dark" srcset="src/templates/images/logo-dark.png, images/logo-dark@2x.png 2x" src="src/templates/images/logo-dark@2x.png" alt="Canvas Logo">
+							</a>
+						</div><!-- #logo end -->
+
+						<div class="header-misc">
+
+							<a href="#" class="button bg-white text-dark button-light button-rounded color">Sign Up</a>
+
+						</div>
+
+						<div class="primary-menu-trigger">
+							<button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
+								<span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
+							</button>
+						</div>
+
+						<!-- Primary Navigation
+						============================================= -->
+						<nav class="primary-menu with-arrows">
+
+							<ul class="menu-container">
+								<li class="menu-item current"><a class="menu-link" href="#"><div>Home</div></a></li>
+								<li class="menu-item mega-menu"><a class="menu-link" href="#"><div>Hosting</div></a>
+									<div class="mega-menu-content mega-menu-style-2 border-top-0 not-dark">
+										<div class="container">
+											<div class="row">
+												<ul class="sub-menu-container mega-menu-column col-lg-3">
+													<li class="menu-item">
+														<div class="widget">
+															<div class="feature-box not-dark fbox-center mb-0">
+																<div class="fbox-icon mb-4">
+																	<img src="demos/hosting/images/svg/web.svg" class="rounded-0 bg-transparent text-start" alt="Image" style="width: 52px;">
+																</div>
+																<div class="fbox-content">
+																	<h3 class="fw-medium"><a href="#">Web Hosting</a></h3>
+																	<p class="d-none d-lg-block mb-0 fw-light">Is a type of Internet hosting service that allows individuals and organizations to make their website accessible via the World Wide Web.</p>
+																	<a href="#" class="btn btn-link mt-2 color p-0">Learn More &#8250;</a>
+																</div>
+															</div>
+														</div>
+													</li>
+												</ul>
+												<ul class="sub-menu-container mega-menu-column col-lg-3">
+													<li class="menu-item">
+														<div class="widget">
+															<div class="feature-box not-dark fbox-center mb-0">
+																<div class="fbox-icon mb-4">
+																	<img src="demos/hosting/images/svg/cloud.svg" class="rounded-0 bg-transparent text-start" alt="Image" style="width: 52px;">
+																</div>
+																<div class="fbox-content">
+																	<h3 class="fw-medium"><a href="#">Cloud Hosting</a></h3>
+																	<p class="d-none d-lg-block mb-0 fw-light">The major benefit cloud hosting offers over shared hosting is that it allows you to utilize the resources of multiple servers.</p>
+																	<a href="#" class="btn btn-link mt-2 color p-0">Learn More &#8250;</a>
+																</div>
+															</div>
+														</div>
+													</li>
+												</ul>
+												<ul class="sub-menu-container mega-menu-column col-lg-3">
+													<li class="menu-item">
+														<div class="widget">
+															<div class="feature-box not-dark fbox-center mb-0">
+																<div class="fbox-icon mb-4">
+																	<img src="demos/hosting/images/svg/dedicated.svg" class="rounded-0 bg-transparent text-start" alt="Image" style="width: 52px;">
+																</div>
+																<div class="fbox-content">
+																	<h3 class="fw-medium"><a href="#">Dedicated Hosting</a></h3>
+																	<p class="d-none d-lg-block mb-0 fw-light">Dedicated server or managed hosting service is a type of Internet hosting in which the client leases an entire server not shared with anyone.</p>
+																	<a href="#" class="btn btn-link mt-2 color p-0">Learn More &#8250;</a>
+																</div>
+															</div>
+														</div>
+													</li>
+												</ul>
+												<ul class="sub-menu-container mega-menu-column col-lg-3">
+													<li class="menu-item">
+														<div class="widget">
+															<div class="feature-box not-dark fbox-center mb-0">
+																<div class="fbox-icon mb-4">
+																	<img src="demos/hosting/images/svg/shared.svg" class="rounded-0 bg-transparent text-start" alt="Image" style="width: 52px;">
+																</div>
+																<div class="fbox-content">
+																	<h3 class="fw-medium"><a href="#">Shared Hosting</a></h3>
+																	<p class="d-none d-lg-block mb-0 fw-light">Shared Web Hosting service refers to a web hosting service where many websites reside on one web server connected to the Internet.</p>
+																	<a href="#" class="btn btn-link mt-2 color p-0">Learn More &#8250;</a>
+																</div>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="menu-item"><a class="menu-link" href="#"><div>Services</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="#"><div>Domains</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="#"><div>FAQs</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="#"><div>Contact</div></a></li>
+							</ul>
+
+						</nav><!-- #primary-menu end -->
+
+					</div>
+				</div>
+			</div>
+			<div class="header-wrap-clone"></div>
+		</header><!-- #header end -->
+
+	<div id="root"></div>
 
 
 		<!-- Slider
@@ -1079,6 +1197,81 @@
 	<!-- Range Slider -->
 	<script src="src/templates/js/components/rangeslider.min.js"></script>
 
+	<script>
+		jQuery(document).ready(function () {
+			var pricingCPU = 1,
+				pricingRAM = 1,
+				pricingStorage = 10,
+				elementCPU = jQuery(".range-slider-cpu"),
+				elementRAM = jQuery(".range-slider-ram"),
+				elementStorage = jQuery(".range-slider-storage");
+
+			elementCPU.ionRangeSlider({
+				grid: false,
+				values: [1, 2, 4, 6, 8],
+				postfix: ' Core',
+				onStart: function (data) {
+					pricingCPU = data.from_value;
+				}
+			});
+
+			elementCPU.on('change', function () {
+				pricingCPU = jQuery(this).prop('value');
+				calculatePrice(pricingCPU, pricingRAM, pricingStorage);
+			});
+
+			elementRAM.ionRangeSlider({
+				grid: false,
+				step: 1,
+				min: 1,
+				from: 1,
+				max: 32,
+				postfix: ' GB',
+				onStart: function (data) {
+					pricingRAM = data.from;
+					console.log(data);
+				}
+			});
+
+			elementRAM.on('onStart change', function () {
+				pricingRAM = jQuery(this).prop('value');
+				calculatePrice(pricingCPU, pricingRAM, pricingStorage);
+			});
+
+			elementStorage.ionRangeSlider({
+				grid: false,
+				step: 10,
+				min: 10,
+				max: 100,
+				postfix: ' GB',
+				onStart: function (data) {
+					pricingStorage = data.from;
+				}
+			});
+
+			elementStorage.on('change', function () {
+				pricingStorage = jQuery(this).prop('value');
+				calculatePrice(pricingCPU, pricingRAM, pricingStorage);
+			});
+
+			calculatePrice(pricingCPU, pricingRAM, pricingStorage);
+
+			function calculatePrice(cpu, ram, storage) {
+				var pricingValue = (Number(cpu) * 10) + (Number(ram) * 8) + (Number(storage) * 0.5);
+				jQuery('.cpu-value').html(pricingCPU);
+				jQuery('.ram-value').html(pricingRAM);
+				jQuery('.storage-value').html(pricingStorage);
+				jQuery('.cpu-price').html('$' + pricingCPU * 10);
+				jQuery('.ram-price').html('$' + pricingRAM * 8);
+				jQuery('.storage-price').html('$' + pricingStorage * 0.5);
+				jQuery('.pricing-price').html('$' + pricingValue);
+			}
+		});
+
+		jQuery(window).on('load', function () {
+			jQuery('#hotspot-img').hotSpot();
+		});
+	</script>
 
 	<script type="module" src="/src/main.jsx"></script>
 </body>

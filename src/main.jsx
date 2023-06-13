@@ -1,3 +1,8 @@
+// import './templates/style.css';
+// import './templates/css/font-icons.css';
+// import './templates/css/components/ion.rangeslider.css';
+// import './templates/demos/hosting/hosting.css';
+// import './templates/css/custom.css';
 import React from "react";
 import ReactDOM from "react-dom/client";
 import {

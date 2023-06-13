@@ -21,8 +21,8 @@ if( typeof jQuery !== 'undefined' ) {
 		gmapAPI: '',
 		scrollOffset: 60,
 		scrollExternalLinks: true,
-		jsFolder: window.globals.jsFolder,
-		cssFolder: window.globals.cssFolder,
+		jsFolder: 'js/',
+		cssFolder: 'css/',
 	};
 
 	var vars = {

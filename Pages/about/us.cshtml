@@ -1,0 +1,24 @@
+@page
+@model AboutUsModel
+
+<h1>@Model.Message</h1>
+
+@functions {
+    public class AboutUsModel : PageModel
+    {
+        
+        public string Message { get; set; }
+
+        public void OnGet()
+        {
+            Message = "Hello, World!";
+        }
+
+        public void OnPost(string name)
+        {
+            Message = $"Hello, {name}!";
+        }
+
+
+    }
+}

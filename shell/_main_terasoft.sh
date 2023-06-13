@@ -4,7 +4,6 @@ if [[ -z "$action" || "$action" == "--help" ]]; then
   echo "  ====== TeraSoft ======"
   echo "                      cd,  dev, build, deploy push"
   echo "  ww.                 canv, dist"
-  echo "  g.                  push"
 else
  case $action in
   "cd")
@@ -38,7 +37,7 @@ else
 
   "ww.canv")
 	  source cd-ts.sh
-    cd src/templates
+    cd canvas_original
     npx http-server -p 8990
 	;;
 
